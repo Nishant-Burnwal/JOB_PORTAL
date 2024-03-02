@@ -14,10 +14,49 @@
       object-fit: cover;
       margin-bottom: 16px;
     }
+
+    nav {
+      background-color: #4CAF50;
+      /* Set the background color */
+      padding: 10px 0;
+      /* Add padding to the top and bottom */
+    }
+
+    img {
+      border-radius: 18px;
+    }
+
+    #background-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url('static/job_image.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      opacity: 0.5;
+      /* Adjust the opacity value */
+    }
+
+    p {
+      font-size: 16px;
+      /* Adjust font size as needed */
+      line-height: 1.6;
+      /* Adjust line height for better readability */
+      color: #121212;
+      /* Default text color */
+      margin-bottom: 20px;
+      /* Space between paragraphs */
+      font-weight: bold;
+    }
   </style>
 </head>
 
 <body>
+  <div id="background-overlay"></div>
   <div class="container">
     {% include 'nav.html' %}
     <h1 class="text-center mt-2 mb-2">Career Search</h1>
@@ -31,10 +70,15 @@
     <h2 class="text-center">About Career</h2>
     <div class="row" style="margin-bottom:16px">
       <div class="col-md-6">
-        <p>Employers trust our
-          platform to connect them with top talent, so rest assured that your next career move could be just a click
-          away.
-          Join our vibrant community today and take the next step towards realizing your professional dreams.</p>
+        <p>Embarking on a career through a job portal offers a gateway to a world of opportunities, where aspirations
+          meet possibilities. These platforms serve as dynamic ecosystems, connecting talented individuals with
+          organizations eager to harness their skills and expertise. Job seekers navigate through a myriad of listings,
+          each presenting a unique avenue for professional growth and fulfillment. From entry-level positions laying the
+          foundation for future success to executive roles steering the course of industries, job portals cater to
+          diverse career trajectories. In this digital age, the job search process has evolved, empowering individuals
+          to tailor their quest according to their aspirations, skills, and preferences. Through job portals, candidates
+          embark on a journey of self-discovery, exploration, and ultimately, career advancement, shaping their
+          professional destinies amidst a sea of opportunities.</p>
       </div>
       <div class="d-none d-md-block col-md-6">
         <img src="/static/people.jpg" style="height:320px; border-radius:4px;">
